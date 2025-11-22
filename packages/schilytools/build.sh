@@ -117,6 +117,7 @@ termux_step_configure() {
 	export ac_cv_func_fcvt=no
 	export ac_cv_func_gcvt=no
 	export ac_cv_func_quotaioctl=no
+	export ac_cv_func_dtoa_r=no
 }
 
 termux_step_make() {
