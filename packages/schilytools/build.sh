@@ -109,6 +109,7 @@ termux_step_configure() {
 	export ac_cv_sizeof_unsigned_long_long=8
 	export ac_cv_sizeof_unsigned_short_int=2
 	export ac_cv_sizeof_char_p=8
+	export ac_cv_sizeof_float=4
 }
 
 termux_step_make() {
