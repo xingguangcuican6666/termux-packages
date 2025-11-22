@@ -34,14 +34,8 @@ termux_step_pre_configure() {
 	LDFLAGS+=" -landroid-shmem"
 }
 
-# 在你的 build.sh 文件中找到 termux_step_configure()
-
 termux_step_configure() {
-	# 运行默认的 configure 脚本。如果失败 (||)，则执行后面的命令
 	( . $TERMUX_PKG_BUILDER_DIR/configure ) || (cat config.log && exit 1)
-	
-	# 如果 configure 成功，上面的 || 后面的部分不会执行
-	# 如果失败，它会先打印 config.log，然后以错误码 1 退出
 }
 
 
