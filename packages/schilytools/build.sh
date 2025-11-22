@@ -16,9 +16,9 @@ TERMUX_PKG_SHA256=76db022e450c1791a00e69780b55d18a2e3fc39b5ff870996433f873120320
 TERMUX_PKG_BUILD_IN_SRC=true
 
 termux_step_pre_configure() {
-	if [[ "$TERMUX_ON_DEVICE_BUILD" == "false" ]]; then
-		termux_error_exit "This package is extremely hard to cross-compile. If you know how, please help!"
-	fi
+	# if [[ "$TERMUX_ON_DEVICE_BUILD" == "false" ]]; then
+	# 	termux_error_exit "This package is extremely hard to cross-compile. If you know how, please help!"
+	# fi
 
 	mv rmt/{,s}rmt.dfl
 	mv rmt/default-{,s}rmt.sample
