@@ -67,17 +67,11 @@ termux_step_configure() {
 	export ac_cv_func_setegid=no
 	export ac_cv_func_setgid=no
 	export ac_cv_func_setpgid=no
-	export ac_cv_sys_minor_bits=20
-	local _ARCH
-	case "$TERMUX_ARCH" in
-	aarch64) _ARCH="arm64" ;;
-	arm) _ARCH="arm" ;;
-	x86_64) _ARCH="x86_64" ;;
-	i686) _ARCH="i386" ;;
-	x86) _ARCH="amd64" ;;
-	*) termux_error_exit "Unsupported arch: $TERMUX_ARCH" ;;
-	esac
-	export ARCH="${_ARCH}"
+	export ac_cv_dev_minor_bits=20
+	export ac_cv_dev_minor_noncontig=no
+	export ac_cv_header_containing_minor=sys/sysmacros.h
+	export ac_cv_header_containing_major=sys/sysmacros.h
+	export ac_cv_header_containing_mkedev=sys/sysmacros.h
 }
 
 termux_step_make() {
