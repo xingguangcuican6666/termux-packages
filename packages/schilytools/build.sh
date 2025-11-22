@@ -75,6 +75,8 @@ termux_step_configure() {
 	export ac_cv_wnowait_waitpid=yes
 	export ac_cv_c_const=yes
 	export ac_cv_c_bitfields_htol=no
+
+	# Fix sizeof tests
 	export ac_cv_type_prototypes=yes
 	# export ac_cv_type_timestruc_t=yes
 	export ac_cv_sizeof_char=1
@@ -106,6 +108,7 @@ termux_step_configure() {
 	export ac_cv_sizeof_unsigned_long_int=8
 	export ac_cv_sizeof_unsigned_long_long=8
 	export ac_cv_sizeof_unsigned_short_int=2
+	export ac_cv_sizeof_char_p=8
 }
 
 termux_step_make() {
