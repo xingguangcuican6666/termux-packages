@@ -35,11 +35,6 @@ termux_step_pre_configure() {
 }
 
 termux_step_configure() {
-	( . $TERMUX_PKG_BUILDER_DIR/configure ) || (cat config.log && exit 1)
-}
-
-
-termux_step_configure() {
 	if [[ "$TERMUX_PKG_API_LEVEL" -lt 26 ]]; then
 		export ac_cv_func_sigset=no
 		export ac_cv_func_getdomainname=no
@@ -72,6 +67,7 @@ termux_step_configure() {
 	export ac_cv_func_setegid=no
 	export ac_cv_func_setgid=no
 	export ac_cv_func_setpgid=no
+	export ac_cv_sys_minor_bits=20
 }
 
 termux_step_make() {
