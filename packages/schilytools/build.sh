@@ -85,6 +85,27 @@ termux_step_configure() {
 	# export ac_cv_sizeof_=8
 	export ac_cv_sizeof_size_t=8
 	export ac_cv_sizeof_time_t=8
+	export ac_cv_sizeof___int64=8
+	export ac_cv_sizeof_wchar_t=4
+	export ac_cv_sizeof_wchar=4
+	export ac_cv_sizeof_dev_t=8
+	export ac_cv_sizeof_gid_t=4
+	export ac_cv_sizeof_uid_t=4
+	export ac_cv_sizeof_double=8
+	export ac_cv_sizeof_major_t=4
+	export ac_cv_sizeof_mode_t=4
+	export ac_cv_sizeof_minor_t=4
+	export ac_cv_sizeof_pid_t=4
+	export ac_cv_sizeof_ptrdiff_t=8
+	export ac_cv_sizeof_ssize_t=8
+	export ac_cv_sizeof_unsigned_short_int=2
+	export ac_cv_sizeof_unsigned___int64=8
+	export ac_cv_sizeof_unsigned_char=1
+	export ac_cv_sizeof_unsigned_char_p=8
+	export ac_cv_sizeof_unsigned_int=4
+	export ac_cv_sizeof_unsigned_long_int=8
+	export ac_cv_sizeof_unsigned_long_long=8
+	export ac_cv_sizeof_unsigned_short_int=2
 }
 
 termux_step_make() {
