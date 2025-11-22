@@ -75,6 +75,7 @@ termux_step_configure() {
 	export ac_cv_wnowait_waitpid=yes
 	export ac_cv_c_const=yes
 	export ac_cv_c_bitfields_htol=no
+	export ac_cv_type_prototypes=yes
 }
 
 termux_step_make() {
