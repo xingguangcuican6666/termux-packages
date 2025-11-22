@@ -74,6 +74,7 @@ termux_step_configure() {
 	export ac_cv_header_containing_mkedev=sys/sysmacros.h
 	export ac_cv_wnowait_waitpid=yes
 	export ac_cv_c_const=yes
+	export ac_cv_c_bitfields_htol=no
 }
 
 termux_step_make() {
