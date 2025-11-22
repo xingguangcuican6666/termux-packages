@@ -80,7 +80,8 @@ termux_step_make() {
 		CCC="$CXX" \
 		COPTX="$CFLAGS" \
 		C++OPTX="$CXXFLAGS" \
-		LDOPTX="$LDFLAGS"
+		LDOPTX="$LDFLAGS" \
+		MINOR_BITS=20
 }
 
 termux_step_make_install() {
