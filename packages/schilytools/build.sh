@@ -78,6 +78,13 @@ termux_step_configure() {
 	export ac_cv_type_prototypes=yes
 	# export ac_cv_type_timestruc_t=yes
 	export ac_cv_sizeof_char=1
+	export ac_cv_sizeof_short_int=2
+	export ac_cv_sizeof_int=4
+	export ac_cv_sizeof_long_int=8
+	export ac_cv_sizeof_long_long=8
+	# export ac_cv_sizeof_=8
+	export ac_cv_sizeof_size_t=8
+	export ac_cv_sizeof_time_t=8
 }
 
 termux_step_make() {
