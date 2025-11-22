@@ -76,7 +76,8 @@ termux_step_configure() {
 	export ac_cv_c_const=yes
 	export ac_cv_c_bitfields_htol=no
 	export ac_cv_type_prototypes=yes
-	export ac_cv_type_timestruc_t=yes
+	# export ac_cv_type_timestruc_t=yes
+	export ac_cv_sizeof_char=1
 }
 
 termux_step_make() {
