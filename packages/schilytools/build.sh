@@ -112,6 +112,7 @@ termux_step_configure() {
 	export ac_cv_sizeof_float=4
 	export ac_cv_sizeof_long_double=16
 	export ac_cv_func_mlock=no
+	export ac_cv_func_mlockall=no
 }
 
 termux_step_make() {
