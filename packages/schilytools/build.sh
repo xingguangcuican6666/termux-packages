@@ -121,7 +121,10 @@ termux_step_configure() {
 
 	# Cross-compilation workarounds
 	export ac_cv_func_vfork_works=yes
-	export ac_cv_have_decl_sys_siglist=no
+	# sys_siglist is available in Android/Bionic
+	export ac_cv_have_decl_sys_siglist=yes
+	export ac_cv_have_sys_siglist=yes
+	export ac_cv_var_sys_siglist=yes
 }
 
 termux_step_make() {
