@@ -118,6 +118,10 @@ termux_step_configure() {
 	export ac_cv_func_gcvt=no
 	export ac_cv_func_quotaioctl=no
 	export ac_cv_func_dtoa_r=no
+
+	# Cross-compilation workarounds
+	export ac_cv_func_vfork_works=yes
+	export ac_cv_have_decl_sys_siglist=no
 }
 
 termux_step_make() {
